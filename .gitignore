@@ -102,3 +102,11 @@ venv.bak/
 
 # mypy
 .mypy_cache/
+
+### custom:
+logs/
+!logs/emptyfileforgit.txt
+tests/
+coord.py
+.vscode/
+

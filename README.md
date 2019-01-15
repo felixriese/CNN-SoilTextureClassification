@@ -11,8 +11,8 @@ Outline:
   * [Setup](#setup)
   * [Usage](#usage)
   * [Citation](#citation)
-    + [Text](#text)
-    + [Bibtex](#bibtex)
+    + [Paper](#paper)
+    + [Code](#code)
 
 ## Description
 

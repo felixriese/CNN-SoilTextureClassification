@@ -70,13 +70,11 @@ print(score)
 
 ## Citation
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540719.svg)](https://doi.org/10.5281/zenodo.2540719)
-
 ### Paper
 
 F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data", 2019, Submitted to an ISPRS conference.
 
-Bibtex:
+**Bibtex:**
 
 ```tex
 @article{riese2019soil,
@@ -90,6 +88,8 @@ Bibtex:
 ### Code
 
 F. M. Riese, "CNN Soil Texture Classification", [doi.org/10.5281/zenodo.2540718](doi.org/10.5281/zenodo.2540718), 2019.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540719.svg)](https://doi.org/10.5281/zenodo.2540719)
 
 **Bibtex:**
 

@@ -2,7 +2,7 @@
 
 1-dimensional convolutional neural networks (CNN) for the classification of soil texture based on hyperspectral data.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540719.svg)](https://doi.org/10.5281/zenodo.2540719)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540718.svg)](https://doi.org/10.5281/zenodo.2540718)
 
 Outline:
 
@@ -89,7 +89,7 @@ F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Ne
 
 F. M. Riese, "CNN Soil Texture Classification", [doi.org/10.5281/zenodo.2540718](doi.org/10.5281/zenodo.2540718), 2019.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540719.svg)](https://doi.org/10.5281/zenodo.2540719)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540718.svg)](https://doi.org/10.5281/zenodo.2540718)
 
 **Bibtex:**
 

@@ -1,6 +1,8 @@
 # CNN Soil Texture Classification
 
-1-dimensional convolutional neural networks (CNN) for the classification of soil texture based on hyperspectral data
+1-dimensional convolutional neural networks (CNN) for the classification of soil texture based on hyperspectral data.
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540719.svg)](https://doi.org/10.5281/zenodo.2540719)
 
 Outline:
 
@@ -67,6 +69,8 @@ print(score)
 ```
 
 ## Citation
+
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540719.svg)](https://doi.org/10.5281/zenodo.2540719)
 
 ### Text
 

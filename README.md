@@ -6,11 +6,11 @@
 
 We present 1-dimensional (1D) convolutional neural networks (CNN) for the classification of soil texture based on hyperspectral data. The following CNN models are included:
 
-* LucasCNN
-* LucasResNet
-* LucasCoordConv
-* 1D CNN by Hu et al. (2015), DOI: [10.1155/2015/258619](http://dx.doi.org/10.1155/2015/258619)
-* 1D CNN by Liu et al. (2018), DOI: [10.3390/s18093169](https://dx.doi.org/10.3390%2Fs18093169)
+* `LucasCNN`
+* `LucasResNet`
+* `LucasCoordConv`
+* `HuEtAl`: 1D CNN by Hu et al. (2015), DOI: [10.1155/2015/258619](http://dx.doi.org/10.1155/2015/258619)
+* `LiuEtAl`: 1D CNN by Liu et al. (2018), DOI: [10.3390/s18093169](https://dx.doi.org/10.3390%2Fs18093169)
 
 These 1D CNNs are optimized for the soil texture classification based on the hyperspectral data of the *Land Use/Cover Area Frame Survey* (LUCAS) topsoil dataset. It is available [here](https://esdac.jrc.ec.europa.eu/projects/lucas). For more information have a look in our publication (see below).
 
@@ -35,6 +35,7 @@ You can import the Keras models like that:
 
 ```python
 import cnn_models as cnn
+
 model = cnn.getKerasModel("LucasCNN")
 model.compile(...)
 
@@ -51,6 +52,7 @@ score = lucas_classification(
     batch_size=32,
     epochs=200,
     random_state=42)
+
 print(score)
 ```
 
@@ -63,7 +65,7 @@ F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Ne
 ### Bibtex
 
 ```tex
-@article{riese20191d,
+@article{riese2019soil,
     author = {Riese, Felix~M. and Keller, Sina},
     title = {Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data},
     year = {2019},

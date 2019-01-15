@@ -2,6 +2,16 @@
 
 1-dimensional convolutional neural networks (CNN) for the classification of soil texture based on hyperspectral data
 
+Outline:
+
+  * [Description](#description)
+  * [Requirements](#requirements)
+  * [Setup](#setup)
+  * [Usage](#usage)
+  * [Citation](#citation)
+    + [Text](#text)
+    + [Bibtex](#bibtex)
+
 ## Description
 
 We present 1-dimensional (1D) convolutional neural networks (CNN) for the classification of soil texture based on hyperspectral data. The following CNN models are included:

@@ -26,6 +26,8 @@ We present 1-dimensional (1D) convolutional neural networks (CNN) for the classi
 
 These 1D CNNs are optimized for the soil texture classification based on the hyperspectral data of the *Land Use/Cover Area Frame Survey* (LUCAS) topsoil dataset. It is available [here](https://esdac.jrc.ec.europa.eu/projects/lucas). For more information have a look in our publication (see below).
 
+**Paper:** [arXiv:1901.04846](https://arxiv.org/abs/1901.04846)
+
 **Licence:** [MIT](LICENSE)
 
 ## Requirements
@@ -72,7 +74,8 @@ print(score)
 
 ### Paper
 
-F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data", 2019, Submitted to an ISPRS conference.
+F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data", 2019, [arXiv:1901.04846](https://arxiv.org/abs/1901.04846), Submitted to an ISPRS conference.
+
 
 **Bibtex:**
 
@@ -81,13 +84,16 @@ F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Ne
     author = {Riese, Felix~M. and Keller, Sina},
     title = {Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data},
     year = {2019},
+    archivePrefix = {arXiv},
+    eprint = {1901.04846},
+    primaryClass = {cs.CV},
     notes = {Submitted to an ISPRS conference}
 }
 ```
 
 ### Code
 
-F. M. Riese, "CNN Soil Texture Classification", [doi.org/10.5281/zenodo.2540718](doi.org/10.5281/zenodo.2540718), 2019.
+F. M. Riese, "CNN Soil Texture Classification", [doi.org/10.5281/zenodo.2540718](https://doi.org/10.5281/zenodo.2540718), 2019.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540718.svg)](https://doi.org/10.5281/zenodo.2540718)
 
@@ -98,8 +104,8 @@ F. M. Riese, "CNN Soil Texture Classification", [doi.org/10.5281/zenodo.2540718]
   author       = {Riese, Felix~M.},
   title        = {{CNN Soil Texture Classification}},
   year         = {2019},
-  publisher = {Zenodo},
+  publisher    = {Zenodo},
   DOI          = {10.5281/zenodo.2540718},
-  howpublished = {\href{https://doi.org/10.5281/zenodo.2540718}}
+  howpublished = {\href{https://doi.org/10.5281/zenodo.2540718}{doi.org/10.5281/zenodo.2540718}}
 }
 ```

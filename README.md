@@ -39,7 +39,9 @@ These 1D CNNs are optimized for the soil texture classification based on the hyp
 
 ```bash
 git clone https://github.com/felixriese/CNN-SoilTextureClassification.git
+
 cd CNN-SoilTextureClassification/
+
 wget https://raw.githubusercontent.com/titu1994/keras-coordconv/c045e3f1ff7dabd4060f515e4b900263eddf1723/coord.py .
 ```
 

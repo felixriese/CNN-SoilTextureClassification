@@ -2,17 +2,19 @@
 
 1-dimensional convolutional neural networks (CNN) for the classification of soil texture based on hyperspectral data.
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540718.svg)](https://doi.org/10.5281/zenodo.2540718)
+Link to the paper: [arXiv:1901.04846](https://arxiv.org/abs/1901.04846)
 
-Outline:
+DOI of the Code: [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540718.svg)](https://doi.org/10.5281/zenodo.2540718)
 
-  * [Description](#description)
-  * [Requirements](#requirements)
-  * [Setup](#setup)
-  * [Usage](#usage)
-  * [Citation](#citation)
-    + [Paper](#paper)
-    + [Code](#code)
+## Outline
+
+* [Description](#description)
+* [Requirements](#requirements)
+* [Setup](#setup)
+* [Usage](#usage)
+* [Citation](#citation)
+  * [Paper](#paper)
+  * [Code](#code)
 
 ## Description
 
@@ -35,9 +37,9 @@ These 1D CNNs are optimized for the soil texture classification based on the hyp
 
 ## Setup
 
-Execute in this directory:
-
 ```bash
+git clone https://github.com/felixriese/CNN-SoilTextureClassification.git
+cd CNN-SoilTextureClassification/
 wget https://raw.githubusercontent.com/titu1994/keras-coordconv/c045e3f1ff7dabd4060f515e4b900263eddf1723/coord.py .
 ```
 
@@ -72,16 +74,18 @@ print(score)
 
 ### Paper
 
-F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data", 2019, Submitted to an ISPRS conference.
-
-**Bibtex:**
+F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data", 2019, Accepted at ISPRS Geospatial Week 2019 in Enschede (NL).
 
 ```tex
 @article{riese2019soil,
     author = {Riese, Felix~M. and Keller, Sina},
     title = {Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data},
     year = {2019},
-    notes = {Submitted to an ISPRS conference}
+    note = {Accepted at ISPRS Geospatial Week 2019 in Enschede (NL)},
+    archivePrefix = {arXiv},
+    eprint = {1901.04846},
+    primaryClass = {cs.CV},
+    url = {https://arxiv.org/abs/1901.04846}
 }
 ```
 
@@ -91,15 +95,13 @@ F. M. Riese, "CNN Soil Texture Classification", [doi.org/10.5281/zenodo.2540718]
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540718.svg)](https://doi.org/10.5281/zenodo.2540718)
 
-**Bibtex:**
-
 ```tex
 @misc{riese2019cnn,
-  author       = {Riese, Felix~M.},
-  title        = {{CNN Soil Texture Classification}},
-  year         = {2019},
-  publisher = {Zenodo},
-  DOI          = {10.5281/zenodo.2540718},
-  howpublished = {\href{https://doi.org/10.5281/zenodo.2540718}}
+    author       = {Riese, Felix~M.},
+    title        = {{CNN Soil Texture Classification}},
+    year         = {2019},
+    publisher    = {Zenodo},
+    DOI          = {10.5281/zenodo.2540718},
+    howpublished = {\href{https://doi.org/10.5281/zenodo.2540718}{doi.org/10.5281/zenodo.2540718}}
 }
 ```

@@ -21,5 +21,4 @@ RUN pip3 install \
     requests \
     keras \
     pydot
-# RUN pip3 install talos
 RUN apt-get clean && rm -rf /tmp/* /var/tmp/*

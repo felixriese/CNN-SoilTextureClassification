@@ -28,6 +28,8 @@ We present 1-dimensional (1D) convolutional neural networks (CNN) for the classi
 
 These 1D CNNs are optimized for the soil texture classification based on the hyperspectral data of the *Land Use/Cover Area Frame Survey* (LUCAS) topsoil dataset. It is available [here](https://esdac.jrc.ec.europa.eu/projects/lucas). For more information have a look in our publication (see below).
 
+**Paper:** [arXiv:1901.04846](https://arxiv.org/abs/1901.04846)
+
 **Licence:** [MIT](LICENSE)
 
 ## Requirements
@@ -76,7 +78,7 @@ print(score)
 
 ### Paper
 
-F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data", 2019, Accepted at ISPRS Geospatial Week 2019 in Enschede (NL).
+F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data", 2019, [arXiv:1901.04846](https://arxiv.org/abs/1901.04846), Accepted at ISPRS Geospatial Week 2019 in Enschede (NL).
 
 ```tex
 @article{riese2019soil,
@@ -93,7 +95,7 @@ F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Ne
 
 ### Code
 
-F. M. Riese, "CNN Soil Texture Classification", [doi.org/10.5281/zenodo.2540718](doi.org/10.5281/zenodo.2540718), 2019.
+F. M. Riese, "CNN Soil Texture Classification", [doi.org/10.5281/zenodo.2540718](https://doi.org/10.5281/zenodo.2540718), 2019.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540718.svg)](https://doi.org/10.5281/zenodo.2540718)
 

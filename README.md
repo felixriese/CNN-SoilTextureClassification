@@ -76,6 +76,8 @@ print(score)
 
 ## Citation
 
+The bibtex file including both references is available [here](bibliography.bib).
+
 ### Paper
 
 F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data", 2019, [arXiv:1901.04846](https://arxiv.org/abs/1901.04846), Accepted at ISPRS Geospatial Week 2019 in Enschede (NL).

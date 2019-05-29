@@ -1,4 +1,6 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540718.svg)](https://doi.org/10.5281/zenodo.2540718)
+[![arXiv](http://img.shields.io/badge/cs.CV-arXiv%3A1901.04846-B31B1B.svg)](https://arxiv.org/abs/1901.04846)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 # CNN Soil Texture Classification
 

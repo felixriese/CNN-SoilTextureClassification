@@ -1,6 +1,7 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540718.svg)](https://doi.org/10.5281/zenodo.2540718)
 [![arXiv](http://img.shields.io/badge/cs.CV-arXiv%3A1901.04846-B31B1B.svg)](https://arxiv.org/abs/1901.04846)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+[![Build Status](https://travis-ci.org/felixriese/CNN-SoilTextureClassification.svg?branch=master)](https://travis-ci.org/felixriese/CNN-SoilTextureClassification)
+[![codecov](https://codecov.io/gh/felixriese/CNN-SoilTextureClassification/branch/master/graph/badge.svg)](https://codecov.io/gh/felixriese/CNN-SoilTextureClassification)
 
 # CNN Soil Texture Classification
 

@@ -25,7 +25,7 @@ data = train_test_split(X, y, test_size=0.5)
 
 @pytest.mark.parametrize(
     "model_name", [
-        "LucasCNN", "LucasResNet", "HuEtAl", "LiuEtAl",
+        "LucasCNN", "LucasResNet", "LucasCoordConv", "HuEtAl", "LiuEtAl",
     ])
 def test_cnn_models(model_name):
     score = lc.lucas_classification(

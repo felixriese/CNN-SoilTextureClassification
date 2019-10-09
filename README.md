@@ -2,6 +2,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/felixriese/CNN-SoilTextureClassification.svg?branch=master)](https://travis-ci.org/felixriese/CNN-SoilTextureClassification)
 [![codecov](https://codecov.io/gh/felixriese/CNN-SoilTextureClassification/branch/master/graph/badge.svg)](https://codecov.io/gh/felixriese/CNN-SoilTextureClassification)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/01c84806115646eb9ba2dde39a84822e)](https://www.codacy.com/manual/felixriese/CNN-SoilTextureClassification?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=felixriese/CNN-SoilTextureClassification&amp;utm_campaign=Badge_Grade)
 
 # CNN Soil Texture Classification
 
@@ -33,7 +34,7 @@ These 1D CNNs are optimized for the soil texture classification based on the hyp
 ## Requirements
 
 * see [Dockerfile](Dockerfile)
-* download `coord.py` from [titu1994/keras-koordconv](https://github.com/titu1994/keras-coordconv) based on [arXiv:1807.03247](https://arxiv.org/abs/1807.03247)
+* download `coord.py` from [titu1994/keras-coordconv](https://github.com/titu1994/keras-coordconv) based on [arXiv:1807.03247](https://arxiv.org/abs/1807.03247)
 
 ## Setup
 

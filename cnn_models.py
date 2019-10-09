@@ -3,8 +3,7 @@
 
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Dense, Input, Flatten, Reshape
-from tensorflow.keras.layers import Conv1D, MaxPooling1D
-from tensorflow.keras.layers import Concatenate
+from tensorflow.keras.layers import Conv1D, MaxPooling1D, Concatenate
 from coord import CoordinateChannel1D
 
 

@@ -34,5 +34,5 @@ def test_cnn_models(model_name):
         batch_size=16,
         epochs=2,
         random_state=2)
-    assert(type(score) == list)
+    assert(isinstance(score, list))
     assert(score[1] > 0.1)

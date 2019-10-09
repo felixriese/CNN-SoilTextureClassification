@@ -6,14 +6,14 @@ COPY /. /app
 
 EXPOSE 8088
 
-RUN apt-get -y update
-RUN apt-get install -y \
-    git \
-    tmux \
-    emacs \
-    nano \
-    graphviz \
-    texlive-latex-base \
-    texlive-science
+RUN apt-get -y update \
+    && apt-get install -y --no-install-recommends \
+        git \
+        tmux \
+        emacs \
+        nano \
+        graphviz \
+    &&  apt-get clean \
+    && rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/*
+
 RUN pip3 install -r requirements.txt
-RUN apt-get clean && rm -rf /tmp/* /var/tmp/*

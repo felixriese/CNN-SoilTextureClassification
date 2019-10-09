@@ -5,7 +5,7 @@ import datetime
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-from keras.callbacks import TensorBoard, EarlyStopping
+from tensorflow.keras.callbacks import TensorBoard, EarlyStopping
 
 import cnn_models as cnn
 
@@ -22,7 +22,7 @@ def lucas_classification(
 
     # 0. set random states
     np.random.seed(random_state)
-    tf.set_random_seed(random_state+1)
+    tf.random.set_seed(random_state+1)
 
     # 1. get data
     X_train, X_val, y_train, y_val = data

@@ -1,4 +1,4 @@
-FROM tensorflow/tensorflow:1.12.0-gpu-py3
+FROM tensorflow/tensorflow:2.0.0-gpu-py3
 
 WORKDIR /app
 
@@ -15,10 +15,5 @@ RUN apt-get install -y \
     graphviz \
     texlive-latex-base \
     texlive-science
-RUN pip3 install \
-    seaborn \
-    scikit-learn \
-    requests \
-    keras \
-    pydot
+RUN pip3 install -r requirements.txt
 RUN apt-get clean && rm -rf /tmp/* /var/tmp/*

@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 # coding: utf-8
+"""Package including tensorflow.keras models."""
 
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Dense, Input, Flatten, Reshape
@@ -8,7 +9,19 @@ from coord import CoordinateChannel1D
 
 
 def getKerasModel(model_name):
+    """Get keras model by name.
 
+    Parameters
+    ----------
+    model_name : str
+        Name of the respective model.
+
+    Returns
+    -------
+    Sequential keras model
+        Model.
+
+    """
     if model_name == "LucasCNN":
         return LucasCNN()
     elif model_name == "HuEtAl":
@@ -25,7 +38,7 @@ def getKerasModel(model_name):
 
 
 def HuEtAl():
-    """Implementation of 1D-CNN by Wei Hu et al 2014."""
+    """Return 1D-CNN by Wei Hu et al 2014."""
     seq_length = 256
 
     # definition by Hu et al for parameter k1 and k2
@@ -47,7 +60,7 @@ def HuEtAl():
 
 
 def LiuEtAl():
-    """Implementation of 1D-CNN by Lanfa Liu et al 2018."""
+    """Return 1D-CNN by Lanfa Liu et al 2018."""
     seq_length = 256
     kernel_size = 3
 
@@ -77,6 +90,14 @@ def LiuEtAl():
 
 
 def LucasCNN():
+    """Return LucasCNN implementation.
+
+    Returns
+    -------
+    Sequential keras model
+        Model.
+
+    """
     seq_length = 256
     kernel_size = 3
     activation = "relu"
@@ -122,6 +143,14 @@ def LucasCNN():
 
 
 def LucasResNet():
+    """Return LucasResNet implementation.
+
+    Returns
+    -------
+    Sequential keras model
+        Model.
+
+    """
     seq_length = 256
     kernel_size = 3
     activation = "relu"
@@ -171,6 +200,14 @@ def LucasResNet():
 
 
 def LucasCoordConv():
+    """Return LucasCoordConv implementation.
+
+    Returns
+    -------
+    Sequential keras model
+        Model.
+
+    """
     seq_length = 256
     kernel_size = 3
     activation = "relu"

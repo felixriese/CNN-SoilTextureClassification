@@ -1,23 +1,45 @@
 #!/usr/bin/env python
 # coding: utf-8
+"""Run LUCAS classification."""
 
 import datetime
+
 import numpy as np
 import pandas as pd
 import tensorflow as tf
-from tensorflow.keras.callbacks import TensorBoard, EarlyStopping
+from tensorflow.keras.callbacks import EarlyStopping, TensorBoard
 
 import cnn_models as cnn
 
 
-def lucas_classification(
-        data,
-        model_name="LucasCNN",
-        batch_size=32,
-        epochs=200,
-        random_state=None,
-        verbose=0):
+def lucas_classification(data, model_name="LucasCNN", batch_size=32,
+                         epochs=200, random_state=None, verbose=0):
+    """Run complete LUCAS classification.
 
+    Parameters
+    ----------
+    data : tuple of 4 np.arrays
+        Training and test data
+    model_name : str (optional, default: "LUCASCNN")
+        Name of the model
+    batch_size : int (optional, default: 32)
+        Batch size
+    epochs : int (optional, default: 200)
+        Number of epochs
+    random_state : int, RandomState instance or None, optional (default=None)
+        If int, random_state is the seed used by the random number generator;
+        If RandomState instance, random_state is the random number generator;
+        If None, the random number generator is the RandomState instance used
+        by `np.random`.
+    verbose : int, optional (default=0)
+        Controls the verbosity.
+
+    Returns
+    -------
+    score : float
+        Accuracy score.
+
+    """
     run = datetime.datetime.now().strftime("%Y%m%d_%H%M%S_") + model_name
 
     # 0. set random states

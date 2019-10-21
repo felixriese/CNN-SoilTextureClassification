@@ -4,16 +4,19 @@ Usage:
 python -m pytest tests/test_cnn_models.py
 
 """
-import sys
 import os
-import pytest
+import sys
+
 import numpy as np
+import pytest
 from sklearn.datasets import make_classification
 from sklearn.model_selection import train_test_split
 from tensorflow.keras.utils import to_categorical
+
 sys.path.insert(
     0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 import lucas_classification as lc
+
 
 # set up dataset
 X, y = make_classification(

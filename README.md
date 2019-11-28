@@ -1,8 +1,8 @@
-[![arXiv](http://img.shields.io/badge/cs.CV-arXiv%3A1901.04846-B31B1B.svg)](https://arxiv.org/abs/1901.04846)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Build Status](https://travis-ci.org/felixriese/CNN-SoilTextureClassification.svg?branch=master)](https://travis-ci.org/felixriese/CNN-SoilTextureClassification)
 [![codecov](https://codecov.io/gh/felixriese/CNN-SoilTextureClassification/branch/master/graph/badge.svg)](https://codecov.io/gh/felixriese/CNN-SoilTextureClassification)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/01c84806115646eb9ba2dde39a84822e)](https://www.codacy.com/manual/felixriese/CNN-SoilTextureClassification?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=felixriese/CNN-SoilTextureClassification&amp;utm_campaign=Badge_Grade)
+[![Paper](https://img.shields.io/badge/DOI-10.5194%2Fisprs--annals--IV--2--W5--615--2019-blue)](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-2-W5/615/2019/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 # CNN Soil Texture Classification
 
@@ -79,18 +79,18 @@ The bibtex file including both references is available [here](bibliography.bib).
 
 ### Paper
 
-F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data", 2019, [arXiv:1901.04846](https://arxiv.org/abs/1901.04846), Accepted at ISPRS Geospatial Week 2019 in Enschede (NL).
+F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data", ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences, vol. IV-2/W5, pp. 615-621, 2019. [Link](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-2-W5/615/2019/)
 
 ```tex
 @article{riese2019soil,
     author = {Riese, Felix~M. and Keller, Sina},
     title = {Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data},
     year = {2019},
-    note = {Accepted at ISPRS Geospatial Week 2019 in Enschede (NL)},
-    archivePrefix = {arXiv},
-    eprint = {1901.04846},
-    primaryClass = {cs.CV},
-    url = {https://arxiv.org/abs/1901.04846}
+    journal = {ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences},
+    volume = {IV-2/W5},
+    pages = {615--621},
+    doi = {10.5194/isprs-annals-IV-2-W5-615-2019},
+    url = {https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-2-W5/615/2019/},
 }
 ```
 

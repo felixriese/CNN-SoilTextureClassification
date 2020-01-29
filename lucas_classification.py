@@ -6,14 +6,17 @@ import datetime
 
 import numpy as np
 import pandas as pd
+import pickle
 import tensorflow as tf
 from tensorflow.keras.callbacks import EarlyStopping, TensorBoard
+from tensorflow.keras.utils import to_categorical
 
 import cnn_models as cnn
 
 
 def lucas_classification(data, model_name="LucasCNN", batch_size=32,
-                         epochs=200, random_state=None, verbose=0):
+                         epochs=200, save_results=False, random_state=None,
+                         verbose=0):
     """Run complete LUCAS classification.
 
     Parameters
@@ -26,6 +29,8 @@ def lucas_classification(data, model_name="LucasCNN", batch_size=32,
         Batch size
     epochs : int (optional, default: 200)
         Number of epochs
+    save_results : bool (optional, default: False)
+        If True, the results are saved.
     random_state : int, RandomState instance or None, optional (default=None)
         If int, random_state is the seed used by the random number generator;
         If RandomState instance, random_state is the random number generator;
@@ -47,7 +52,13 @@ def lucas_classification(data, model_name="LucasCNN", batch_size=32,
     tf.random.set_seed(random_state+1)
 
     # 1. get data
-    X_train, X_val, y_train, y_val = data
+    X_train, X_val, X_test, y_train, y_val, y_test = data
+    X_train = np.expand_dims(X_train, axis=2)
+    X_val = np.expand_dims(X_val, axis=2)
+    X_test = np.expand_dims(X_test, axis=2)
+    y_train = to_categorical(y_train)
+    y_val = to_categorical(y_val)
+    y_test = to_categorical(y_test)
 
     # 2. get model
     model = cnn.getKerasModel(model_name)
@@ -55,10 +66,6 @@ def lucas_classification(data, model_name="LucasCNN", batch_size=32,
     # 3. set up callbacks
     tensorboard = TensorBoard(
         log_dir='./logs/'+run,
-        write_graph=True,
-        write_grads=True,
-        write_images=True,
-        update_freq='epoch',
         histogram_freq=5)
     earlystopping = EarlyStopping(monitor="val_loss", patience=40)
 
@@ -79,23 +86,36 @@ def lucas_classification(data, model_name="LucasCNN", batch_size=32,
 
     # 6. calculate score
     score = model.evaluate(X_val, y_val, batch_size=batch_size)
+
+    # 7. save model
+    if save_results:
+        y_val_pred = model.predict(X_val, batch_size=batch_size)
+        y_test_pred = model.predict(X_test, batch_size=batch_size)
+        pickle.dump(y_val_pred, open("data/results/"+run+"_yvalpred.p", "wb"))
+        pickle.dump(y_test_pred, open("data/results/"+run+"_ytestpred.p", "wb"))
+
     return score
 
 
 if __name__ == '__main__':
 
+    # CHANGE path to CSV files:
+    data_path = "data/training/"
+
     # load data
-    # (note that you first have to add the CSV files to the directory!)
-    X_train = pd.read_csv("X_train.csv", index_col=0).values
-    X_val = pd.read_csv("X_val.csv", index_col=0).values
-    y_train = pd.read_csv("y_train.csv", index_col=0).values
-    y_val = pd.read_csv("y_val.csv", index_col=0).values
+    X_train = pd.read_csv(data_path+"X_train.csv", index_col=0).values
+    X_val = pd.read_csv(data_path+"X_val.csv", index_col=0).values
+    X_test = pd.read_csv(data_path+"X_test.csv", index_col=0).values
+    y_train = pd.read_csv(data_path+"y_train.csv", index_col=0).values
+    y_val = pd.read_csv(data_path+"y_val.csv", index_col=0).values
+    y_test = pd.read_csv(data_path+"y_test.csv", index_col=0).values
 
     score = lucas_classification(
-        data=[X_train, X_val, y_train, y_val],
+        data=[X_train, X_val, X_test, y_train, y_val, y_test],
         model_name="LucasCNN",
         batch_size=32,
         epochs=200,
+        save_results=True,
         random_state=42)
 
     print(score)

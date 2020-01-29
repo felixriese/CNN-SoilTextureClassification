@@ -5,7 +5,6 @@
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Dense, Input, Flatten, Reshape
 from tensorflow.keras.layers import Conv1D, MaxPooling1D, Concatenate
-from coord import CoordinateChannel1D
 
 
 def getKerasModel(model_name):
@@ -208,6 +207,8 @@ def LucasCoordConv():
         Model.
 
     """
+    from coord import CoordinateChannel1D
+
     seq_length = 256
     kernel_size = 3
     activation = "relu"

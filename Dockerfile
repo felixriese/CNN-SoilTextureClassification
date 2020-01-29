@@ -6,14 +6,15 @@ COPY /. /app
 
 EXPOSE 8088
 
-RUN apt-get -y update \
-    && apt-get install -y --no-install-recommends \
+RUN apt-get -y update
+RUN apt-get install -y --no-install-recommends \
+        wget \
         git \
         tmux \
         emacs \
-        nano \
-        graphviz \
-    &&  apt-get clean \
-    && rm -rf /tmp/* /var/tmp/* /var/lib/apt/lists/*
+        nano
 
-RUN pip3 install -r requirements.txt
+RUN pip3 install --upgrade pip
+RUN pip3 install pandas
+
+RUN apt-get clean && rm -rf /tmp/* /var/tmp/*

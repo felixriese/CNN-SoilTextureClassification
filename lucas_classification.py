@@ -3,10 +3,10 @@
 """Run LUCAS classification."""
 
 import datetime
+import pickle
 
 import numpy as np
 import pandas as pd
-import pickle
 import tensorflow as tf
 from tensorflow.keras.callbacks import EarlyStopping, TensorBoard
 from tensorflow.keras.utils import to_categorical
@@ -92,7 +92,8 @@ def lucas_classification(data, model_name="LucasCNN", batch_size=32,
         y_val_pred = model.predict(X_val, batch_size=batch_size)
         y_test_pred = model.predict(X_test, batch_size=batch_size)
         pickle.dump(y_val_pred, open("data/results/"+run+"_yvalpred.p", "wb"))
-        pickle.dump(y_test_pred, open("data/results/"+run+"_ytestpred.p", "wb"))
+        pickle.dump(y_test_pred, open("data/results/"+run+"_ytestpred.p",
+                                      "wb"))
 
     return score
 
@@ -103,19 +104,19 @@ if __name__ == '__main__':
     data_path = "data/training/"
 
     # load data
-    X_train = pd.read_csv(data_path+"X_train.csv", index_col=0).values
-    X_val = pd.read_csv(data_path+"X_val.csv", index_col=0).values
-    X_test = pd.read_csv(data_path+"X_test.csv", index_col=0).values
-    y_train = pd.read_csv(data_path+"y_train.csv", index_col=0).values
-    y_val = pd.read_csv(data_path+"y_val.csv", index_col=0).values
-    y_test = pd.read_csv(data_path+"y_test.csv", index_col=0).values
+    X_tr = pd.read_csv(data_path+"X_train.csv", index_col=0).values
+    X_v = pd.read_csv(data_path+"X_val.csv", index_col=0).values
+    X_te = pd.read_csv(data_path+"X_test.csv", index_col=0).values
+    y_tr = pd.read_csv(data_path+"y_train.csv", index_col=0).values
+    y_v = pd.read_csv(data_path+"y_val.csv", index_col=0).values
+    y_te = pd.read_csv(data_path+"y_test.csv", index_col=0).values
 
-    score = lucas_classification(
-        data=[X_train, X_val, X_test, y_train, y_val, y_test],
+    clas_score = lucas_classification(
+        data=[X_tr, X_v, X_te, y_tr, y_v, y_te],
         model_name="LucasCNN",
         batch_size=32,
         epochs=200,
         save_results=True,
         random_state=42)
 
-    print(score)
+    print(clas_score)

@@ -2,9 +2,9 @@
 # coding: utf-8
 """Package including tensorflow.keras models."""
 
+from tensorflow.keras.layers import (Concatenate, Conv1D, Dense, Flatten,
+                                     Input, MaxPooling1D, Reshape)
 from tensorflow.keras.models import Model
-from tensorflow.keras.layers import Dense, Input, Flatten, Reshape
-from tensorflow.keras.layers import Conv1D, MaxPooling1D, Concatenate
 
 
 def getKerasModel(model_name):
@@ -23,17 +23,16 @@ def getKerasModel(model_name):
     """
     if model_name == "LucasCNN":
         return LucasCNN()
-    elif model_name == "HuEtAl":
+    if model_name == "HuEtAl":
         return HuEtAl()
-    elif model_name == "LiuEtAl":
+    if model_name == "LiuEtAl":
         return LiuEtAl()
-    elif model_name == "LucasResNet":
+    if model_name == "LucasResNet":
         return LucasResNet()
-    elif model_name == "LucasCoordConv":
+    if model_name == "LucasCoordConv":
         return LucasCoordConv()
-    else:
-        print("Error: Model {0} not implemented.".format(model_name))
-        return None
+    print("Error: Model {0} not implemented.".format(model_name))
+    return None
 
 
 def HuEtAl():

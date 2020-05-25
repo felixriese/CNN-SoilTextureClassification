@@ -1,4 +1,4 @@
-tensorflow>=2.0.0
+tensorflow>=2.2.0
 matplotlib
 seaborn
 scikit-learn

@@ -6,11 +6,14 @@
 
 # CNN Soil Texture Classification
 
-1-dimensional convolutional neural networks (CNN) for the classification of soil texture based on hyperspectral data.
+1-dimensional convolutional neural networks (CNN) for the classification of
+soil texture based on hyperspectral data.
 
 ## Description
 
-We present 1-dimensional (1D) convolutional neural networks (CNN) for the classification of soil texture based on hyperspectral data. The following CNN models are included:
+We present 1-dimensional (1D) convolutional neural networks (CNN) for the
+classification of soil texture based on hyperspectral data. The following CNN
+models are included:
 
 * `LucasCNN`
 * `LucasResNet`
@@ -75,28 +78,8 @@ print(score)
 
 ## Citation
 
-The bibtex file including both references is available [here](bibliography.bib).
-
-### Paper
-
-F. M. Riese and S. Keller, "Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data", ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences, vol. IV-2/W5, pp. 615-621, 2019. [Link](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-2-W5/615/2019/)
-
-```tex
-@article{riese2019soil,
-    author = {Riese, Felix~M. and Keller, Sina},
-    title = {Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data},
-    year = {2019},
-    journal = {ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences},
-    volume = {IV-2/W5},
-    pages = {615--621},
-    doi = {10.5194/isprs-annals-IV-2-W5-615-2019},
-    url = {https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-2-W5/615/2019/},
-}
-```
-
-### Code
-
-F. M. Riese, "CNN Soil Texture Classification", [doi.org/10.5281/zenodo.2540718](https://doi.org/10.5281/zenodo.2540718), 2019.
+[1] F. M. Riese, "CNN Soil Texture Classification",
+[DOI:10.5281/zenodo.2540718](https://doi.org/10.5281/zenodo.2540718), 2019.
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.2540718.svg)](https://doi.org/10.5281/zenodo.2540718)
 
@@ -107,6 +90,31 @@ F. M. Riese, "CNN Soil Texture Classification", [doi.org/10.5281/zenodo.2540718]
     year         = {2019},
     publisher    = {Zenodo},
     DOI          = {10.5281/zenodo.2540718},
-    howpublished = {\href{https://doi.org/10.5281/zenodo.2540718}{doi.org/10.5281/zenodo.2540718}}
 }
 ```
+
+## Code is Supplementary Material to
+
+[2] F. M. Riese and S. Keller, "Soil Texture Classification with 1D
+Convolutional Neural Networks based on Hyperspectral Data", ISPRS Annals of
+Photogrammetry, Remote Sensing and Spatial Information Sciences, vol. IV-2/W5,
+pp. 615-621, 2019. [DOI:10.5194/isprs-annals-IV-2-W5-615-2019](https://doi.org/10.5194/isprs-annals-IV-2-W5-615-2019)
+
+```tex
+@article{riese2019soil,
+    author = {Riese, Felix~M. and Keller, Sina},
+    title = {Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data},
+    year = {2019},
+    journal = {ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences},
+    volume = {IV-2/W5},
+    pages = {615--621},
+    doi = {10.5194/isprs-annals-IV-2-W5-615-2019},
+}
+```
+
+[3] F. M. Riese, "LUCAS Soil Texture Processing Scripts," Zenodo, 2020.
+[DOI:0.5281/zenodo.3871431](https://doi.org/10.5281/zenodo.3871431)
+
+[4] Felix M. Riese. "Development and Applications of Machine Learning Methods
+for Hyperspectral Data." PhD thesis. Karlsruhe, Germany: Karlsruhe Institute of
+Technology (KIT), 2020. [DOI:10.5445/IR/1000120067](https://doi.org/10.5445/IR/1000120067)

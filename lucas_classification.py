@@ -49,7 +49,7 @@ def lucas_classification(data, model_name="LucasCNN", batch_size=32,
 
     # 0. set random states
     np.random.seed(random_state)
-    tf.random.set_seed(random_state+1)
+    tf.random.set_seed(random_state)
 
     # 1. get data
     X_train, X_val, X_test, y_train, y_val, y_test = data

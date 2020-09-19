@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/felixriese/CNN-SoilTextureClassification.svg?branch=master)](https://travis-ci.org/felixriese/CNN-SoilTextureClassification)
+[![Build Status](https://travis-ci.com/felixriese/CNN-SoilTextureClassification.svg?branch=master)](https://travis-ci.com/felixriese/CNN-SoilTextureClassification)
 [![codecov](https://codecov.io/gh/felixriese/CNN-SoilTextureClassification/branch/master/graph/badge.svg)](https://codecov.io/gh/felixriese/CNN-SoilTextureClassification)
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/01c84806115646eb9ba2dde39a84822e)](https://www.codacy.com/manual/felixriese/CNN-SoilTextureClassification?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=felixriese/CNN-SoilTextureClassification&amp;utm_campaign=Badge_Grade)
 [![Paper](https://img.shields.io/badge/DOI-10.5194%2Fisprs--annals--IV--2--W5--615--2019-blue)](https://www.isprs-ann-photogramm-remote-sens-spatial-inf-sci.net/IV-2-W5/615/2019/)

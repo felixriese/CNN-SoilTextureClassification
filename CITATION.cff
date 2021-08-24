@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite both the article from preferred-citation and the software itself."
+authors:
+  - family-names: Riese
+    given-names: Felix M.
+    orcid: https://orcid.org/0000-0003-0596-9585
+title: "CNN Soil Texture Classification"
+version: 1.1
+doi: "10.5281/zenodo.2540718"
+date-released: 2020-06-09
+repository-code: https://github.com/felixriese/CNN-SoilTextureClassification
+license: MIT
+preferred-citation:
+  authors:
+    - family-names: Riese
+      given-names: Felix M.
+    - family-names: Keller
+      given-names: Sina
+  title: "Soil Texture Classification with 1D Convolutional Neural Networks based on Hyperspectral Data"
+  type: article
+  year: 2019
+  doi: "10.5194/isprs-annals-IV-2-W5-615-2019"
+  journal: "ISPRS Annals of Photogrammetry, Remote Sensing and Spatial Information Sciences"
+  volume: IV-2/W5
+  url: https://www.mdpi.com/2072-4292/12/1/7
+  pages: "615-621"
